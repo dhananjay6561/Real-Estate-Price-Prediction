@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Jupyter Notebook Deployment</title>
+</head>
+<body>
+    <h1>Real Estate Price Predictor</h1>
+    
+    <!-- Form for user input -->
+    <form action="/" method="post">
+        <label for="feature1">Feature 1:</label>
+        <input type="text" id="feature1" name="feature1"><br><br>
+        
+        <label for="feature2">Feature 2:</label>
+        <input type="text" id="feature2" name="feature2"><br><br>
+        
+        <!-- Add more input fields for other features as needed -->
+        
+        <button type="submit">Predict Price</button>
+    </form>
+
+    <!-- Display model output -->
+    <h2>Predicted Price:</h2>
+    <p>{{ output }}</p>
+</body>
+</html>
