@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    output = generate_output()  # Call the function from your script
+    output = generate_output()  
     return render_template('index.html', output=output)
 
 if __name__ == '__main__':
