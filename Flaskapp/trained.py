@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.impute import SimpleImputer  # Import SimpleImputer from sklearn.impute
+from sklearn.impute import SimpleImputer 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import RandomForestRegressor
@@ -11,7 +11,7 @@ from sklearn.model_selection import cross_val_score
 from joblib import dump, load
 from sklearn.metrics import r2_score
 
-# Your code continues...
+
 
 
 # Load data
@@ -42,7 +42,7 @@ def create_pipeline():
 
 # Model training
 def train_model(data, labels):
-    model = RandomForestRegressor()  # You can change the model here if needed
+    model = RandomForestRegressor()  
     model.fit(data, labels)
     return model
 
